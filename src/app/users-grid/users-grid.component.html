@@ -1,0 +1,16 @@
+<p>
+  Users
+</p>
+
+<table *ngIf="users"> 
+	<tr class="main-row"> 
+		<th class="empty-header"></th>
+		<th class="name-header">Name</th> 
+		<th class="lastname-header">Lastname</th> 
+	</tr> 
+	<tr *ngFor="let user of users.data"> 
+		<td><img [src]="user.avatar"></td> 
+		<td>{{ user.first_name }}</td> 
+		<td>{{ user.last_name }}</td> 
+	</tr> 
+</table>
